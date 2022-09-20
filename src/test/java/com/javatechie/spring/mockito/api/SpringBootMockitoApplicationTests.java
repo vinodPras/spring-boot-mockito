@@ -50,7 +50,7 @@ public class SpringBootMockitoApplicationTests {
 		when(repository.save(user)).thenReturn(user);
 		assertEquals(user, service.addUser(user));
 	}
-
+	//this is for test junit2
 	@Test
 	public void deleteUserTest() {
 		User user = new User(999, "Pranya", 33, "Pune");
