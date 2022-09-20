@@ -43,7 +43,7 @@ public class SpringBootMockitoApplicationTests {
 				.thenReturn(Stream.of(new User(376, "Danile", 31, "USA")).collect(Collectors.toList()));
 		assertEquals(1, service.getUserbyAddress(address).size());
 	}
-
+//this is for test junit1
 	@Test
 	public void saveUserTest() {
 		User user = new User(999, "Pranya", 33, "Pune");
