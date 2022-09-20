@@ -35,7 +35,7 @@ public class SpringBootMockitoApplicationTests {
 				.of(new User(376, "Danile", 31, "USA"), new User(958, "Huy", 35, "UK"),new User(428, "vinod", 35, "IND")).collect(Collectors.toList()));
 		assertEquals(3, service.getUsers().size());
 	}
-
+// this is for test junit
 	@Test
 	public void getUserbyAddressTest() {
 		String address = "Bangalore";
