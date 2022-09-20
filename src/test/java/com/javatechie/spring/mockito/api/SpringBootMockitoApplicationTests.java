@@ -32,8 +32,8 @@ public class SpringBootMockitoApplicationTests {
 	@Test
 	public void getUsersTest() {
 		when(repository.findAll()).thenReturn(Stream
-				.of(new User(376, "Danile", 31, "USA"), new User(958, "Huy", 35, "UK")).collect(Collectors.toList()));
-		assertEquals(2, service.getUsers().size());
+				.of(new User(376, "Danile", 31, "USA"), new User(958, "Huy", 35, "UK"),new User(428, "vinod", 35, "IND")).collect(Collectors.toList()));
+		assertEquals(3, service.getUsers().size());
 	}
 
 	@Test
