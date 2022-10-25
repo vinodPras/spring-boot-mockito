@@ -4,6 +4,7 @@ public class Student {
 	String name;
 	int age;
 	String firstName;
+	String lastName;
 	public String getName() {
 		return name;
 	}
@@ -22,10 +23,15 @@ public class Student {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	@Override
-	public String toString() {
-		return "Student [name=" + name + ", age=" + age + ", firstName=" + firstName + "]";
+	
+	public String getLastName() {
+		return lastName;
 	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	
 	
 	
 
